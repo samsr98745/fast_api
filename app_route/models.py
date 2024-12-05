@@ -1,6 +1,6 @@
 
 from sqlalchemy import *
-from sqlalchemy.sql.expression import null
+
 from psycopg import *
 from sqlalchemy.orm import *
 

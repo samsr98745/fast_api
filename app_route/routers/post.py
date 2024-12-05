@@ -1,5 +1,4 @@
-from email import message
-from turtle import mode, pos
+
 
 from fastapi.background import P
 from app_route import oauth2
@@ -8,8 +7,8 @@ from fastapi import FastAPI, Response, status, HTTPException, Depends, APIRouter
 from sqlalchemy.orm import Session
 from sqlalchemy import func, select
 from .. database import  get_db_session
-from typing import List, Optional, Union
-from fastapi.responses import JSONResponse
+from typing import List, Optional
+
 from fastapi.encoders import jsonable_encoder
 
 router = APIRouter(
