@@ -31,7 +31,7 @@ router = APIRouter(tags=["Authentication"])
 
 
 
-@router.get("/login", response_model= schemas.Token)
+@router.post("/login", response_model= schemas.Token)
 def login(user_credentials: OAuth2PasswordRequestForm = Depends(), db: Session = Depends(get_db_session)):
 ##### OAuth2request from stores the username i.e email and password in the post form and we can use that 
 ###### to verify the authentication also we can pass that in form type in postman instead of schemas as above code
