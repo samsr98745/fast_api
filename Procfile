@@ -1,0 +1,1 @@
+web: uvicorn app_route.main_route:app --host=0.0.0.0 --port=${PORT:-5000}
